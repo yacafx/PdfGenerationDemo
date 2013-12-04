@@ -120,7 +120,7 @@
 
 - (IBAction)generatePdfButtonPressed:(id)sender
 {
-    pageSize = CGSizeMake(612, 792);
+    pageSize = CGSizeMake(1024, 1008);
     NSString *fileName = @"ViveTuRetiro.pdf";
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
