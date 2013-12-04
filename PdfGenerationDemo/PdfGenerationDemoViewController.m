@@ -11,7 +11,6 @@
 @interface PdfGenerationDemoViewController (Private)
 - (void) generatePdfWithFilePath: (NSString *)thefilePath;
 - (void) drawText;
-- (void) drawHeader;
 - (void) drawImage;
 @end
 
@@ -20,22 +19,6 @@
 #pragma mark - Private Methods
 
 
-
-- (void) drawHeader
-{
-    CGContextRef    currentContext = UIGraphicsGetCurrentContext();
-    CGContextSetRGBFillColor(currentContext, 0.3, 0.7, 0.2, 1.0);
-    
-    NSString *textToDraw = @"Pdf Demo - iOSLearner.com";
-    
-    UIFont *font = [UIFont systemFontOfSize:24.0];
-    
-    CGSize stringSize = [textToDraw sizeWithFont:font constrainedToSize:CGSizeMake(pageSize.width - 2*kBorderInset-2*kMarginInset, pageSize.height - 2*kBorderInset - 2*kMarginInset) lineBreakMode:UILineBreakModeWordWrap];
-    
-    CGRect renderingRect = CGRectMake(kBorderInset + kMarginInset, kBorderInset + kMarginInset, pageSize.width - 2*kBorderInset - 2*kMarginInset, stringSize.height);
-    
-    [textToDraw drawInRect:renderingRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentLeft];
-}
 
 - (void) drawText
 {
@@ -50,7 +33,7 @@
                                constrainedToSize:CGSizeMake(pageSize.width - 2*kBorderInset-2*kMarginInset, pageSize.height - 2*kBorderInset - 2*kMarginInset) 
                                    lineBreakMode:UILineBreakModeWordWrap];
     
-    CGRect renderingRect = CGRectMake(kBorderInset + kMarginInset, kBorderInset + kMarginInset + 50.0, pageSize.width - 2*kBorderInset - 2*kMarginInset, stringSize.height);
+    CGRect renderingRect = CGRectMake(kBorderInset + kMarginInset, 280, pageSize.width - 2*kBorderInset - 2*kMarginInset, stringSize.height);
     
     [textToDraw drawInRect:renderingRect 
                   withFont:font
@@ -59,12 +42,11 @@
     
 }
 
-
-
-- (void) drawImage
+- (void) drawImage:(NSString *)imageName posX:(float)posX posY:(float)posY
 {
-    UIImage * demoImage = [UIImage imageNamed:@"demo.png"];
-    [demoImage drawInRect:CGRectMake( (pageSize.width - demoImage.size.width/2)/2, 350, demoImage.size.width/2, demoImage.size.height/2)];
+    NSString *img = [NSString stringWithFormat:@"%@", imageName];
+    UIImage * myImage = [UIImage imageNamed:img];
+    [myImage drawInRect:CGRectMake(posX,posY, myImage.size.width, myImage.size.height)];
 }
 
 - (void) generatePdfWithFilePath: (NSString *)thefilePath
@@ -80,14 +62,14 @@
         
         //Draw a page number at the bottom of each page.
         currentPage++;
-        //Draw text fo our header.
-        [self drawHeader];
 
         //Draw some text for the page.
         [self drawText];
             
         //Draw an image
-        [self drawImage];
+        [self drawImage:@"headerPdf.png" posX:0 posY:0];
+        
+        
         done = YES;
     } 
     while (!done);
