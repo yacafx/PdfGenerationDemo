@@ -21,34 +21,8 @@
 @implementation PdfGenerationDemoViewController
 
 #pragma mark - Private Methods
-- (void) drawBorder
-{
-    CGContextRef    currentContext = UIGraphicsGetCurrentContext();
-    UIColor *borderColor = [UIColor brownColor];
-    
-    CGRect rectFrame = CGRectMake(kBorderInset, kBorderInset, pageSize.width-kBorderInset*2, pageSize.height-kBorderInset*2);
-    
-    CGContextSetStrokeColorWithColor(currentContext, borderColor.CGColor);
-    CGContextSetLineWidth(currentContext, kBorderWidth);
-    CGContextStrokeRect(currentContext, rectFrame);
-}
 
-- (void)drawPageNumber:(NSInteger)pageNumber
-{
-    NSString* pageNumberString = [NSString stringWithFormat:@"Page %d", pageNumber];
-    UIFont* theFont = [UIFont systemFontOfSize:12];
-    
-    CGSize pageNumberStringSize = [pageNumberString sizeWithFont:theFont
-                                   constrainedToSize:pageSize
-                                       lineBreakMode:UILineBreakModeWordWrap];
-    
-    CGRect stringRenderingRect = CGRectMake(kBorderInset,
-                                   pageSize.height - 40.0,
-                                   pageSize.width - 2*kBorderInset,
-                                   pageNumberStringSize.height);
 
-    [pageNumberString drawInRect:stringRenderingRect withFont:theFont lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentCenter];
-}
 
 - (void) drawHeader
 {
@@ -88,24 +62,7 @@
     
 }
 
-- (void) drawLine
-{
-    CGContextRef    currentContext = UIGraphicsGetCurrentContext();
 
-    CGContextSetLineWidth(currentContext, kLineWidth);
-    
-    CGContextSetStrokeColorWithColor(currentContext, [UIColor blueColor].CGColor);
-    
-    CGPoint startPoint = CGPointMake(kMarginInset + kBorderInset, kMarginInset + kBorderInset + 40.0);
-    CGPoint endPoint = CGPointMake(pageSize.width - 2*kMarginInset -2*kBorderInset, kMarginInset + kBorderInset + 40.0);
-    
-    CGContextBeginPath(currentContext);
-    CGContextMoveToPoint(currentContext, startPoint.x, startPoint.y);
-    CGContextAddLineToPoint(currentContext, endPoint.x, endPoint.y);
-    
-    CGContextClosePath(currentContext);    
-    CGContextDrawPath(currentContext, kCGPathFillStroke);
-}
 
 - (void) drawImage
 {
