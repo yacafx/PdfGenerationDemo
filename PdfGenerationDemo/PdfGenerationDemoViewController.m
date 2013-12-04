@@ -80,16 +80,8 @@
         
         //Draw a page number at the bottom of each page.
         currentPage++;
-        [self drawPageNumber:currentPage];
-        
-        //Draw a border for each page.
-        [self drawBorder];
-        
         //Draw text fo our header.
         [self drawHeader];
-        
-        //Draw a line below the header.
-        [self drawLine];
 
         //Draw some text for the page.
         [self drawText];
