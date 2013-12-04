@@ -18,24 +18,31 @@
 
 #pragma mark - Private Methods
 
+NSString *text1 = @"<nombre> a continuación te presentamos información importante para construir el patrimonio que te permitirá vivir tu retiro en plenitud, estos datos están acorde con tu situación de vida actual y los datos que nos has proporcionado.  \r\r Con tu ahorro programado del <%% ahorro> %% de tu ingreso mensual, al llegar a los <edad> años tendrás un monto de $<cantidad ahorrada> que te permitirá vivir el retiro que siempre imaginaste.";
+
+NSString *text2 = @"Con este ahorro para tu retiro podrás mantener tu nivel de vida y el de tu familia al llegar a tu retiro, por lo que es importante que conozcas cómo están conformados los ingresos que recibirás al momento de retirarte.";
+
+NSString *text3 = @"También es importante saber en qué estarás gastando por lo que a continuación te mostramos una gráfica sobre el detalle de tus gastos en tu etapa de retiro.";
+
+NSString *text4 = @"Para nosotros es importante acompañarte en la planeación de cada etapa de tu vida y contamos con soluciones acordes a tus necesidades, por lo que te invitamos a acercarte con alguno de nuestros asesores, quien podrá hacerte un traje a la medida de tus necesidades.";
 
 
-- (void) drawText
+- (void) drawText:(NSString *)imageName
 {
-    CGContextRef    currentContext = UIGraphicsGetCurrentContext();
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor(currentContext, 0.0, 0.0, 0.0, 1.0);
-
-    NSString *textToDraw = @"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.";
+    
+    NSString *textToDraw = imageName;
     
     UIFont *font = [UIFont systemFontOfSize:14.0];
-        
+    
     CGSize stringSize = [textToDraw sizeWithFont:font
-                               constrainedToSize:CGSizeMake(pageSize.width - 2*kBorderInset-2*kMarginInset, pageSize.height - 2*kBorderInset - 2*kMarginInset) 
+                               constrainedToSize:CGSizeMake(pageSize.width - 2*kBorderInset-2*kMarginInset, pageSize.height - 2*kBorderInset - 2*kMarginInset)
                                    lineBreakMode:UILineBreakModeWordWrap];
     
     CGRect renderingRect = CGRectMake(kBorderInset + kMarginInset, 280, pageSize.width - 2*kBorderInset - 2*kMarginInset, stringSize.height);
     
-    [textToDraw drawInRect:renderingRect 
+    [textToDraw drawInRect:renderingRect
                   withFont:font
              lineBreakMode:UILineBreakModeWordWrap
                  alignment:UITextAlignmentLeft];
@@ -55,23 +62,23 @@
     
     NSInteger currentPage = 0;
     BOOL done = NO;
-    do 
+    do
     {
         //Start a new page.
         UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, pageSize.width, pageSize.height), nil);
         
         //Draw a page number at the bottom of each page.
         currentPage++;
-
+        
         //Draw some text for the page.
-        [self drawText];
-            
+        [self drawText:text1];
+        
         //Draw an image
         [self drawImage:@"headerPdf.png" posX:0 posY:0];
         
         
         done = YES;
-    } 
+    }
     while (!done);
     
     // Close the PDF context and write the contents out.
