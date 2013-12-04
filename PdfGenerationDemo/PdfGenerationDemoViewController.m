@@ -18,13 +18,13 @@
 
 #pragma mark - Private Methods
 
-NSString *text1 = @"<nombre> a continuación te presentamos información importante para construir el patrimonio que te permitirá vivir tu retiro en plenitud, estos datos están acorde con tu situación de vida actual y los datos que nos has proporcionado.  \r\r Con tu ahorro programado del <% ahorro> % de tu ingreso mensual, al llegar a los <edad> años tendrás un monto de $<cantidad ahorrada> que te permitirá vivir el retiro que siempre imaginaste.";
+NSString* text1 = @"<nombre> a continuación te presentamos información importante para construir el patrimonio que te permitirá vivir tu retiro en plenitud, estos datos están acorde con tu situación de vida actual y los datos que nos has proporcionado.  \r\r Con tu ahorro programado del <% ahorro> % de tu ingreso mensual, al llegar a los <edad> años tendrás un monto de $<cantidad ahorrada> que te permitirá vivir el retiro que siempre imaginaste.";
 
-NSString *text2 = @"Con este ahorro para tu retiro podrás mantener tu nivel de vida y el de tu familia al llegar a tu retiro, por lo que es importante que conozcas cómo están conformados los ingresos que recibirás al momento de retirarte.";
+NSString* text2 = @"Con este ahorro para tu retiro podrás mantener tu nivel de vida y el de tu familia al llegar a tu retiro, por lo que es importante que conozcas cómo están conformados los ingresos que recibirás al momento de retirarte.";
 
-NSString *text3 = @"También es importante saber en qué estarás gastando por lo que a continuación te mostramos una gráfica sobre el detalle de tus gastos en tu etapa de retiro.";
+NSString* text3 = @"También es importante saber en qué estarás gastando por lo que a continuación te mostramos una gráfica sobre el detalle de tus gastos en tu etapa de retiro.";
 
-NSString *text4 = @"Para nosotros es importante acompañarte en la planeación de cada etapa de tu vida y contamos con soluciones acordes a tus necesidades, por lo que te invitamos a acercarte con alguno de nuestros asesores, quien podrá hacerte un traje a la medida de tus necesidades.";
+NSString* text4 = @"Para nosotros es importante acompañarte en la planeación de cada etapa de tu vida y contamos con soluciones acordes a tus necesidades, por lo que te invitamos a acercarte con alguno de nuestros asesores, quien podrá hacerte un traje a la medida de tus necesidades.";
 
 
 - (void) drawText:(NSString *)textToShow posY:(float)posY
