@@ -16,8 +16,9 @@
 		4B0991F8149B8F9900882F96 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0991F6149B8F9900882F96 /* MainWindow.xib */; };
 		4B0991FB149B8F9900882F96 /* PdfGenerationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0991FA149B8F9900882F96 /* PdfGenerationDemoViewController.m */; };
 		4B0991FE149B8F9900882F96 /* PdfGenerationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0991FC149B8F9900882F96 /* PdfGenerationDemoViewController.xib */; };
-		4B101CC3149C7CF4009F073C /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B101CC2149C7CF4009F073C /* demo.png */; };
 		6E38627B184EF804000516C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E38627A184EF804000516C5 /* Default-568h@2x.png */; };
+		6E38627E184EF87B000516C5 /* footerPdf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E38627C184EF87B000516C5 /* footerPdf.png */; };
+		6E38627F184EF87B000516C5 /* headerPdf.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E38627D184EF87B000516C5 /* headerPdf.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,9 @@
 		4B0991F9149B8F9900882F96 /* PdfGenerationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PdfGenerationDemoViewController.h; sourceTree = "<group>"; };
 		4B0991FA149B8F9900882F96 /* PdfGenerationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdfGenerationDemoViewController.m; sourceTree = "<group>"; };
 		4B0991FD149B8F9900882F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PdfGenerationDemoViewController.xib; sourceTree = "<group>"; };
-		4B101CC2149C7CF4009F073C /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		6E38627A184EF804000516C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6E38627C184EF87B000516C5 /* footerPdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footerPdf.png; sourceTree = "<group>"; };
+		6E38627D184EF87B000516C5 /* headerPdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerPdf.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,8 @@
 		4B23B80D149E32C300B6B0F0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4B101CC2149C7CF4009F073C /* demo.png */,
+				6E38627C184EF87B000516C5 /* footerPdf.png */,
+				6E38627D184EF87B000516C5 /* headerPdf.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -189,11 +192,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E38627F184EF87B000516C5 /* headerPdf.png in Resources */,
 				4B0991EF149B8F9900882F96 /* InfoPlist.strings in Resources */,
 				4B0991F8149B8F9900882F96 /* MainWindow.xib in Resources */,
 				4B0991FE149B8F9900882F96 /* PdfGenerationDemoViewController.xib in Resources */,
+				6E38627E184EF87B000516C5 /* footerPdf.png in Resources */,
 				6E38627B184EF804000516C5 /* Default-568h@2x.png in Resources */,
-				4B101CC3149C7CF4009F073C /* demo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
