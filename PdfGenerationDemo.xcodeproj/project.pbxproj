@@ -17,6 +17,7 @@
 		4B0991FB149B8F9900882F96 /* PdfGenerationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0991FA149B8F9900882F96 /* PdfGenerationDemoViewController.m */; };
 		4B0991FE149B8F9900882F96 /* PdfGenerationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0991FC149B8F9900882F96 /* PdfGenerationDemoViewController.xib */; };
 		4B101CC3149C7CF4009F073C /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B101CC2149C7CF4009F073C /* demo.png */; };
+		6E38627B184EF804000516C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E38627A184EF804000516C5 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4B0991FA149B8F9900882F96 /* PdfGenerationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdfGenerationDemoViewController.m; sourceTree = "<group>"; };
 		4B0991FD149B8F9900882F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PdfGenerationDemoViewController.xib; sourceTree = "<group>"; };
 		4B101CC2149C7CF4009F073C /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
+		6E38627A184EF804000516C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		4B0991D5149B8F9900882F96 = {
 			isa = PBXGroup;
 			children = (
+				6E38627A184EF804000516C5 /* Default-568h@2x.png */,
 				4B0991EA149B8F9900882F96 /* PdfGenerationDemo */,
 				4B0991E3149B8F9900882F96 /* Frameworks */,
 				4B0991E1149B8F9900882F96 /* Products */,
@@ -161,6 +164,9 @@
 /* Begin PBXProject section */
 		4B0991D7149B8F9900882F96 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
 			buildConfigurationList = 4B0991DA149B8F9900882F96 /* Build configuration list for PBXProject "PdfGenerationDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -186,6 +192,7 @@
 				4B0991EF149B8F9900882F96 /* InfoPlist.strings in Resources */,
 				4B0991F8149B8F9900882F96 /* MainWindow.xib in Resources */,
 				4B0991FE149B8F9900882F96 /* PdfGenerationDemoViewController.xib in Resources */,
+				6E38627B184EF804000516C5 /* Default-568h@2x.png in Resources */,
 				4B101CC3149C7CF4009F073C /* demo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +244,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -253,6 +259,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -261,7 +268,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -281,6 +287,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PdfGenerationDemo/PdfGenerationDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "PdfGenerationDemo/PdfGenerationDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -292,6 +299,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PdfGenerationDemo/PdfGenerationDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "PdfGenerationDemo/PdfGenerationDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
