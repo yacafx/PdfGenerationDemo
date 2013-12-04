@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B0991E5149B8F9900882F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0991E4149B8F9900882F96 /* UIKit.framework */; };
+		4B0991E7149B8F9900882F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0991E6149B8F9900882F96 /* Foundation.framework */; };
+		4B0991E9149B8F9900882F96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0991E8149B8F9900882F96 /* CoreGraphics.framework */; };
+		4B0991EF149B8F9900882F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B0991ED149B8F9900882F96 /* InfoPlist.strings */; };
+		4B0991F1149B8F9900882F96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0991F0149B8F9900882F96 /* main.m */; };
+		4B0991F5149B8F9900882F96 /* PdfGenerationDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0991F4149B8F9900882F96 /* PdfGenerationDemoAppDelegate.m */; };
+		4B0991F8149B8F9900882F96 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0991F6149B8F9900882F96 /* MainWindow.xib */; };
+		4B0991FB149B8F9900882F96 /* PdfGenerationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0991FA149B8F9900882F96 /* PdfGenerationDemoViewController.m */; };
+		4B0991FE149B8F9900882F96 /* PdfGenerationDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B0991FC149B8F9900882F96 /* PdfGenerationDemoViewController.xib */; };
+		4B101CC3149C7CF4009F073C /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B101CC2149C7CF4009F073C /* demo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B0991E0149B8F9900882F96 /* PdfGenerationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdfGenerationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0991E4149B8F9900882F96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B0991E6149B8F9900882F96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B0991E8149B8F9900882F96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B0991EC149B8F9900882F96 /* PdfGenerationDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PdfGenerationDemo-Info.plist"; sourceTree = "<group>"; };
+		4B0991EE149B8F9900882F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4B0991F0149B8F9900882F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B0991F2149B8F9900882F96 /* PdfGenerationDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PdfGenerationDemo-Prefix.pch"; sourceTree = "<group>"; };
+		4B0991F3149B8F9900882F96 /* PdfGenerationDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PdfGenerationDemoAppDelegate.h; sourceTree = "<group>"; };
+		4B0991F4149B8F9900882F96 /* PdfGenerationDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdfGenerationDemoAppDelegate.m; sourceTree = "<group>"; };
+		4B0991F7149B8F9900882F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4B0991F9149B8F9900882F96 /* PdfGenerationDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PdfGenerationDemoViewController.h; sourceTree = "<group>"; };
+		4B0991FA149B8F9900882F96 /* PdfGenerationDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdfGenerationDemoViewController.m; sourceTree = "<group>"; };
+		4B0991FD149B8F9900882F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PdfGenerationDemoViewController.xib; sourceTree = "<group>"; };
+		4B101CC2149C7CF4009F073C /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B0991DD149B8F9900882F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0991E5149B8F9900882F96 /* UIKit.framework in Frameworks */,
+				4B0991E7149B8F9900882F96 /* Foundation.framework in Frameworks */,
+				4B0991E9149B8F9900882F96 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B0991D5149B8F9900882F96 = {
+			isa = PBXGroup;
+			children = (
+				4B0991EA149B8F9900882F96 /* PdfGenerationDemo */,
+				4B0991E3149B8F9900882F96 /* Frameworks */,
+				4B0991E1149B8F9900882F96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B0991E1149B8F9900882F96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B0991E0149B8F9900882F96 /* PdfGenerationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B0991E3149B8F9900882F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B0991E4149B8F9900882F96 /* UIKit.framework */,
+				4B0991E6149B8F9900882F96 /* Foundation.framework */,
+				4B0991E8149B8F9900882F96 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0991EA149B8F9900882F96 /* PdfGenerationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4B23B80C149E32B100B6B0F0 /* Resources */,
+				4B23B80B149E32A800B6B0F0 /* Classes */,
+				4B0991EB149B8F9900882F96 /* Supporting Files */,
+			);
+			path = PdfGenerationDemo;
+			sourceTree = "<group>";
+		};
+		4B0991EB149B8F9900882F96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B0991EC149B8F9900882F96 /* PdfGenerationDemo-Info.plist */,
+				4B0991ED149B8F9900882F96 /* InfoPlist.strings */,
+				4B0991F0149B8F9900882F96 /* main.m */,
+				4B0991F2149B8F9900882F96 /* PdfGenerationDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B23B80B149E32A800B6B0F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B0991F3149B8F9900882F96 /* PdfGenerationDemoAppDelegate.h */,
+				4B0991F4149B8F9900882F96 /* PdfGenerationDemoAppDelegate.m */,
+				4B0991F9149B8F9900882F96 /* PdfGenerationDemoViewController.h */,
+				4B0991FA149B8F9900882F96 /* PdfGenerationDemoViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4B23B80C149E32B100B6B0F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B23B80E149E32DD00B6B0F0 /* XIBs */,
+				4B23B80D149E32C300B6B0F0 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B23B80D149E32C300B6B0F0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B101CC2149C7CF4009F073C /* demo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4B23B80E149E32DD00B6B0F0 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4B0991F6149B8F9900882F96 /* MainWindow.xib */,
+				4B0991FC149B8F9900882F96 /* PdfGenerationDemoViewController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B0991DF149B8F9900882F96 /* PdfGenerationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B099201149B8F9900882F96 /* Build configuration list for PBXNativeTarget "PdfGenerationDemo" */;
+			buildPhases = (
+				4B0991DC149B8F9900882F96 /* Sources */,
+				4B0991DD149B8F9900882F96 /* Frameworks */,
+				4B0991DE149B8F9900882F96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PdfGenerationDemo;
+			productName = PdfGenerationDemo;
+			productReference = 4B0991E0149B8F9900882F96 /* PdfGenerationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B0991D7149B8F9900882F96 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4B0991DA149B8F9900882F96 /* Build configuration list for PBXProject "PdfGenerationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B0991D5149B8F9900882F96;
+			productRefGroup = 4B0991E1149B8F9900882F96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B0991DF149B8F9900882F96 /* PdfGenerationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B0991DE149B8F9900882F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0991EF149B8F9900882F96 /* InfoPlist.strings in Resources */,
+				4B0991F8149B8F9900882F96 /* MainWindow.xib in Resources */,
+				4B0991FE149B8F9900882F96 /* PdfGenerationDemoViewController.xib in Resources */,
+				4B101CC3149C7CF4009F073C /* demo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B0991DC149B8F9900882F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0991F1149B8F9900882F96 /* main.m in Sources */,
+				4B0991F5149B8F9900882F96 /* PdfGenerationDemoAppDelegate.m in Sources */,
+				4B0991FB149B8F9900882F96 /* PdfGenerationDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B0991ED149B8F9900882F96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B0991EE149B8F9900882F96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4B0991F6149B8F9900882F96 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B0991F7149B8F9900882F96 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		4B0991FC149B8F9900882F96 /* PdfGenerationDemoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B0991FD149B8F9900882F96 /* en */,
+			);
+			name = PdfGenerationDemoViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B0991FF149B8F9900882F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B099200149B8F9900882F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B099202149B8F9900882F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfGenerationDemo/PdfGenerationDemo-Prefix.pch";
+				INFOPLIST_FILE = "PdfGenerationDemo/PdfGenerationDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4B099203149B8F9900882F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfGenerationDemo/PdfGenerationDemo-Prefix.pch";
+				INFOPLIST_FILE = "PdfGenerationDemo/PdfGenerationDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B0991DA149B8F9900882F96 /* Build configuration list for PBXProject "PdfGenerationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B0991FF149B8F9900882F96 /* Debug */,
+				4B099200149B8F9900882F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B099201149B8F9900882F96 /* Build configuration list for PBXNativeTarget "PdfGenerationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B099202149B8F9900882F96 /* Debug */,
+				4B099203149B8F9900882F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B0991D7149B8F9900882F96 /* Project object */;
+}
