@@ -10,10 +10,7 @@
 
 @interface PdfGenerationDemoViewController (Private)
 - (void) generatePdfWithFilePath: (NSString *)thefilePath;
-- (void)drawPageNumber:(NSInteger)pageNum;
-- (void) drawBorder;
 - (void) drawText;
-- (void) drawLine;
 - (void) drawHeader;
 - (void) drawImage;
 @end
